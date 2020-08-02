@@ -84,7 +84,7 @@
 
     <h2 class="text-center">start your order</h2>
 
-    <form action="" id="form">
+    <form action="" id="form" class="text-center">
       
         <div class="menu-items">
 
@@ -178,33 +178,23 @@
 
     </form>
 
-    <div class="controls">
+    <div class="controls text-center">
 
-        <div class="button" onclick="getOrder()">
-        
-            <p>place order</p>
+        <button type="submit" class="btn btn-success" onclick="getOrder()">Place Order</button>
 
-        </div>
-
-        <div class="button" onclick="CancelOrder()">
-        
-            <p>cancel</p>
-
-        </div>
+        <button type="reset" class="btn btn-danger" onclick="CancelOrder()">Cancel Order</button>
 
     </div>
 
     <div id="cart">
 
-        <div id="yourOrder">
+        <div class="text-center" id="yourOrder">
 
-            <h3>proceed</h3>
-
-        </div>
+            <h3>Proceed To Payment</h3>
 
         <div id="yourPrice">
 
-            <h3>price</h3>
+            <h3>Price</h3>
 
         </div>
 
@@ -216,13 +206,9 @@
 
         <h3>grand total:</h3>
 
-    </div>
-
     <div id="grandPrice"></div>
 
 </div>
-
-
 
 <script
     src="https://code.jquery.com/jquery-3.5.1.min.js"
