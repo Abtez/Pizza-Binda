@@ -59,18 +59,26 @@ button{
 
 #address{
     width: 30%;
+    height: 3vw;
     color: black;
+    border: 1px solid white;
+    background-color: white;
+    padding-left: 1%
 }
 
-i{
-    background-color: dodgerblue;
-    width: 5%;
+.inputIcon i{
+    background-color: ;
+    width: 13%;
     height: 3vw;
     padding: 0.5%;
     position: relative;
     text-align: center;
-    left: 0.6%;
-    top: -2px;
+    left: -45.5%;
+    top: 2px;
+}
+.inputIcon{
+    display: flex;
+    justify-content: center;
 }
 
 #form{

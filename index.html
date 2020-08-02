@@ -57,21 +57,19 @@
         <div class="dropdown-delivery">
             <label for="Delivery"></label>
             <select name="Options" id="options" style="width: 40%;height: 40px;">
-              <option value="Delivery">Delivery</option>
-              <option value="Takeaway">Takeaway</option>
+              <option id="delivery" value="Delivery">Delivery</option>
+              <option value="Takeaway" selected>Takeaway</option>
             </select>
         </div>
 
         <br>
         
-        <div class="inputIcon">
+        <div class="inputIcon text-center">
 
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-
-            <input type="address" name="address" placeholder="Address" id="address" value="">
-            
+            <p placeholder="Address" id="address"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span></p>
+      
         </div>
-
+        
         <br>
 
         <button class="btn btn-primary" type="submit" onclick="">Submit</button>
@@ -317,7 +315,7 @@
 
           <div id="id02" class="modal">
   
-            <form class="modal-content animate">
+            <form class="modal-content" style="width: 60%;">
 
               <div class="imgcontainer">
 

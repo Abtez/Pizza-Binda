@@ -8,11 +8,17 @@ window.onclick = function(event) {
 
 var modal2 = document.getElementById('id02');
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
     if (event.target == modal2) {
         modal2.style.display = "none";
     }
 }
 
-$(document).ready(function())
+var dropdown=document.getElementById("options");
+dropdown.onchange=function(event){
+    if(dropdown.value==="Delivery"){
+       var address= prompt("Enter Your Address");
+        document.getElementById("address").innerHTML=address;
+    }
+}
