@@ -65,4 +65,10 @@ i{
     align-items: center;
 }
 
-
+.lastContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    
+}
