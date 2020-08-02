@@ -17,6 +17,11 @@ body{
     font-size: 1.6vw;
 }
 
+.dropdown-menu:hover{
+    background: orange;
+    color: blue;
+}
+
 h1{
     font-family: "Architects Daughter";
     font-weight: bold;
@@ -63,6 +68,7 @@ i{
 	flex-direction: row;
 	justify-content: space-evenly;
     align-items: center;
+    font-size: 16px;
 }
 
 .lastContainer{
@@ -70,7 +76,6 @@ i{
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-transform: capitalize;
-
 }
 
 .columsocial{
