@@ -72,7 +72,7 @@
         
         <br>
 
-        <button class="btn btn-primary" type="submit" onclick="">Submit</button>
+        <button class="btn btn-primary" type="submit" onclick="" id="submit">Submit</button>
 
 </div>
 </div>
@@ -88,19 +88,19 @@
 
             <h3>size</h3>
 
-            <input class="size" type="radio" name="Size" value="Small">Small - Ksh300
+            <input class="size" type="radio" name="Size" value="Small" id="small">Small - Ksh300
 
             <br>
 
-            <input class="size" type="radio" name="Size" value="Medium" checked>Medium - Ksh550
+            <input class="size" type="radio" name="Size" value="Medium" id="medium" checked>Medium - Ksh550
 
             <br>
 
-            <input class="size" type="radio" name="Size" value="Large">Large - Ksh800
+            <input class="size" type="radio" name="Size" value="Large" id="large">Large - Ksh800
 
             <br>
 
-            <input class="size" type="radio" name="Size" value="Extra Large">Extra Large - Ksh1100
+            <input class="size" type="radio" name="Size" value="Extra Large" id="exLarge">Extra Large - Ksh1100
 
             <br>
 
@@ -110,19 +110,19 @@
 
                 <h3>crust</h3>
 
-                <input class="crust" type="radio" name="Crust" value="Crust Cryspy">Crust Crispy - ksh140
+                <input class="crust" type="radio" name="Crust" value="Crust Cryspy" id="crispy">Crust Crispy - ksh140
 
                 <br>
 
-                <input class="crust" type="radio" name="Crust" value="Crust Stuffed">Crust Stuffed - ksh170
+                <input class="crust" type="radio" name="Crust" value="Crust Stuffed" id="stuffed">Crust Stuffed - ksh170
 
                 <br>
 
-                <input class="crust" type="radio" name="Crust" value="Plain Crust" checked>Plain Crust - ksh100
+                <input class="crust" type="radio" name="Crust" value="Plain Crust" id="plain" checked>Plain Crust - ksh100
 
                 <br>
 
-                <input class="crust" type="radio" name="Crust" value="Glutten-Free Crust">Glutten-Free Crust - ksh150
+                <input class="crust" type="radio" name="Crust" value="Glutten-Free Crust" id="gluttenfree">Glutten-Free Crust - ksh150
 
                 <br>
 
@@ -132,23 +132,23 @@
 
               <h3>toppings</h3>
 
-              <input class="meat" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni
+              <input class="meat" type="checkbox" name="Meat" value="Pepperoni" id="pepperoni"> Pepperoni
               
               <br>
 
-              <input class="meat" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef
+              <input class="meat" type="checkbox" name="Meat" value="Ground Beef" id="beef"> Ground Beef
               
               <br>
 
-              <input class="meat" type="checkbox" name="Meat" value="Chicken"> Chicken
+              <input class="meat" type="checkbox" name="Meat" value="Chicken" id="chicken"> Chicken
                         
               <br>
 
-              <input class="veggies" type="checkbox" name="Veggies" value="Tomatoes"> Tomatoes
+              <input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" id="tomato"> Tomatoes
               
               <br>
 
-              <input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> Pineapple
+              <input class="veggies" type="checkbox" name="Veggies" value="Pineapple" id="pineapple"> Pineapple
               
               <br>
               
@@ -164,9 +164,9 @@
 
         <input type="number" class="" value="" placeholder="Quantity" id="quantity">
 
-        <button type="submit" class="btn btn-success" onclick="getOrder()">Place Order</button>
+        <button type="submit" class="btn btn-success" onclick="getOrder()" id="getorder">Place Order</button>
 
-        <button type="reset" class="btn btn-danger" onclick="CancelOrder()">Cancel Order</button>
+        <button type="reset" class="btn btn-danger" onclick="CancelOrder()" id="cnclorder">Cancel Order</button>
 
     </div>
 
