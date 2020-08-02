@@ -1,0 +1,77 @@
+body{
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.jumbotron{
+   background: url("/image/pizzabg.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: white;
+   border-radius: 2rem;
+      
+}
+
+.navbar{
+    font-size: 1.6vw;
+}
+
+h1{
+    font-family: "Architects Daughter";
+    font-weight: bold;
+}
+
+.myBorder{
+    border: 1px solid black;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.356);
+    font-size: 1.8vw;
+}
+
+.dropdown-delivery{
+    color: black;
+    cursor: pointer;
+}
+
+button{
+    color: black;
+}
+
+#address{
+    width: 30%;
+    color: black;
+}
+
+i{
+    background-color: dodgerblue;
+    width: 5%;
+    height: 3vw;
+    padding: 0.5%;
+    position: relative;
+    text-align: center;
+    left: 0.6%;
+    top: -2px;
+}
+
+#form{
+    margin: 0% auto;
+	width: 600px;
+	border-radius: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.menu-item {
+	flex: 1 150px;
+	min-width: 0;
+	border: 3px solid #fff;
+	box-shadow: 0 0 0 2px rgba(0,0,0, .3);
+    padding: 0 0 10px 0;
+	margin: 3px;
+	border-radius: 1px;
+	background-color: rgba(234, 235, 237, 0.9);
+}
