@@ -94,7 +94,7 @@
 
             <br>
 
-            <input class="size" type="radio" name="Size" value="550" id="medium" checked>Medium - Ksh550
+            <input class="size" type="radio" name="Size" value="550" id="medium">Medium - Ksh550
 
             <br>
 
@@ -126,14 +126,25 @@
 
               <h3>toppings</h3>
 
-              <input class="meat" type="checkbox" name="Meat" value="Pepperoni" id="pepperoni"> Pepperoni<input id="pepper" list="pepperoniSize" name="pepperoniSize"/>
+              <div class="prnpizza">
+
+              <input class="meat" type="checkbox" name="Meat" value="Pepperoni" id="pepperoni"> Pepperoni
+              
+              <select class="values">
+                    <option value="50" >small</option>
+                    <option value="100">medium</option>
+                    <option value="150">large</option>
+              </select>
+
+            </div>
+              <!--input id="pepper" list="pepperoniSize" name="pepperoniSize"/>
               <datalist id="pepperoniSize">
                 <option id="small" value="Small - Ksh50" >
                 <option id="medium" value="Medium - Ksh100">
                 <option id="large" value="Large - Ksh150">
                 <option id="extralarge" value="Extra Large - Ksh200">
               
-              </datalist>
+              </datalist-->
               
               <br>
 
