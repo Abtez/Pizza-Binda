@@ -53,7 +53,8 @@
         <hr class="my-2">
         <p>Order your pizza and get it delivered to your doorstep in minutes!!!</p>
 
-        
+        <form class="landing-form" action="">
+            
         <div class="dropdown-delivery">
             <label for="Delivery"></label>
             <select name="Options" id="options" style="width: 40%;height: 40px;">
@@ -74,6 +75,7 @@
 
         <button class="btn btn-primary" type="submit" onclick="" id="submit">Submit</button>
 
+    </form>
 </div>
 </div>
 </div>
@@ -132,25 +134,60 @@
 
               <h3>toppings</h3>
 
-              <input class="meat" type="checkbox" name="Meat" value="Pepperoni" id="pepperoni"> Pepperoni
+              <input class="meat" type="checkbox" name="Meat" value="Pepperoni" id="pepperoni"> Pepperoni<input id="pepper" list="pepperoniSize" name="pepperoniSize"/>
+              <datalist id="pepperoniSize">
+                <option value="Small - Ksh50" >
+                <option value="Medium - Ksh100">
+                <option value="Large - Ksh150">
+                <option value="Extra Large - Ksh200">
+              
+              </datalist>
               
               <br>
 
-              <input class="meat" type="checkbox" name="Meat" value="Ground Beef" id="beef"> Ground Beef
+              <input class="veggies" type="checkbox" name="Veggies" value="Pineapple" id="pineapple"> Pineapple<input id="pine" list="pineApple" name="pineApple"/>
+              <datalist id="pineApple">
+                <option value="Small - Ksh50" >
+                <option value="Medium - Ksh100">
+                <option value="Large - Ksh150">
+                <option value="Extra Large - Ksh200">
+              
+              </datalist>
               
               <br>
 
-              <input class="meat" type="checkbox" name="Meat" value="Chicken" id="chicken"> Chicken
+              <input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" id="tomato"> Tomatoes<input id="tomats" list="tomaToes" name="tomaToes" />
+              <datalist id="tomaToes">
+                <option value="Small - Ksh50" >
+                <option value="Medium - Ksh100">
+                <option value="Large - Ksh150">
+                <option value="Extra Large - Ksh200">
+              
+              </datalist>
+              
+              <br>
+
+              <input class="meat" type="checkbox" name="Meat" value="Chicken" id="chicken"> Chicken<input id="kuku" list="chickHen" name="chickHen" />
+              <datalist id="chickenHen">
+                <option value="Small - Ksh50" >
+                <option value="Medium - Ksh100">
+                <option value="Large - Ksh150">
+                <option value="Extra Large - Ksh200">
+              
+              </datalist>
                         
               <br>
 
-              <input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" id="tomato"> Tomatoes
+              <input class="meat" type="checkbox" name="Meat" value="Beef" id="beef"> Beef<input id="cowbeef" list="beefmeat" name="beefmeat" />
+              <datalist id="beefmeat">
+                <option value="Small - Ksh50" >
+                <option value="Medium - Ksh100">
+                <option value="Large - Ksh150">
+                <option value="Extra Large - Ksh200">
               
-              <br>
-
-              <input class="veggies" type="checkbox" name="Veggies" value="Pineapple" id="pineapple"> Pineapple
+              </datalist>
               
-              <br>
+              <br>                           
               
               </div>
 

@@ -22,3 +22,5 @@ dropdown.onchange=function(event){
         document.getElementById("address").innerHTML=address;
     }
 }
+
+let
