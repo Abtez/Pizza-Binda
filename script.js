@@ -46,7 +46,34 @@ const pizzaSize=[small,medium,large];
 
 //console.log(pizzaSize);
 
-var crustCrisp=document.getElementById()
+var crispy=document.getElementById("crispy").value;
+var stuffed=document.getElementById("stuffed").value;
+var gluttenFree=document.getElementById("gluttenfree").value;
+
+crispy=140;
+stuffed=170;
+gluttenFree=150;
+
+const pizzaCrust=[crispy,stuffed,gluttenFree]
+
+//console.log(pizzaCrust);
+
+$(document).ready(function(){
+    $('#form input').on('change', function() {
+        alert($('input[name=radioName]:checked', '#form').val()); 
+     });
+
+     $(":radio").on("change", function(){
+         var total=0;
+         $(":radio:checked").each(function(){
+             total+=Number(this.value)
+         })
+         $("#total1").text(total);
+     })
+});
+
+
+
 
 
 
