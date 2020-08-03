@@ -60,7 +60,7 @@ const pizzaCrust=[crispy,stuffed,gluttenFree]
 
 $(document).ready(function(){
     $('#form input').on('change', function() {
-        alert($('input[name=radioName]:checked', '#form').val()); 
+        //alert($('input[name=radioName]:checked', '#form').val()); 
      });
 
      $(":radio").on("change", function(){
@@ -70,14 +70,12 @@ $(document).ready(function(){
          })
          $("#total1").text(total);
      })
+
+     $("select").change(function(){
+        var totalTop=0;
+        $("select:selected").each(function(){
+            totalTop+=Number($(this).val());
+        })
+        $("#total2").html(totalTop);
 });
-
-
-
-
-
-
-
-
-
-
+});
