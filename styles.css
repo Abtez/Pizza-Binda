@@ -259,7 +259,7 @@ select{
      color: black;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
     .cancelbtn, .signupbtn {
        width: 100%;
     }

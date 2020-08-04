@@ -28,7 +28,7 @@ const submit=document.querySelector("#submit");
 
 submit.addEventListener("click", function(){
     console.log(address);
-    alert("Your Order Will Be Delivered to Your Location & Your Delivery Charge is Ksh 250");
+    alert("Your Order Will Be Delivered to Your Location" + " " + address + " " + "& Your Delivery Charge is Ksh 250");
     event.preventDefault();
 })
 
@@ -118,15 +118,6 @@ function myFunction() {
     }
   }
 
-  function myReset() {
-    document.getElementById("form").reset();
-  }
-
   function refreshPage(){
     window.location.reload();
 } 
-
-
-$(document).ready(function(){
- 
-});
