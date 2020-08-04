@@ -69,7 +69,9 @@ $(document).ready(function(){
              total+=Number(this.value)
          })
          $("#total1").text(total);
-     })
+         console.log(total);
+
+     
 
      $('select').on("change", function(){
         var sum = 0;
@@ -77,5 +79,14 @@ $(document).ready(function(){
             sum += Number($(this).val());
         });
          $("#total2").html(sum);
+
+         console.log(sum);
+         var grandTotal=sum+total;
+         document.getElementById("total3").innerHTML=grandTotal;
+         console.log(grandTotal)
+
     });
+
+})
+   
 });

@@ -221,6 +221,9 @@ button:hover {
     display: table;
 }
 
+select{
+    text-transform: capitalize;
+}
 
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
