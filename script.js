@@ -71,7 +71,7 @@ $(document).ready(function(){
          $("#total1").text(total);
      })
 
-     $('select').change(function(){
+     $('select').on("change", function(){
         var sum = 0;
         $('select.values').each(function() {
             sum += Number($(this).val());
