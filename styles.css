@@ -5,7 +5,7 @@ body{
 }
 
 .jumbotron{
-   background: url("/image/pizzabg.jpg");
+   background: url("./image/pizzabg.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    color: white;
@@ -259,7 +259,7 @@ select{
      color: black;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
