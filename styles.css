@@ -85,7 +85,7 @@ button{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	justify-content: space-evenly;
     font-size: 16px;
     text-align: left;
@@ -111,11 +111,11 @@ button{
 }
 
 h3{
-    color: blue;
+    color: black;
 }
 
 h2{
-    color: dodgerblue;
+    color: black;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -230,6 +230,22 @@ select{
     font-weight: bold;
     text-shadow: black;
     font-size: 1.8vw;
+}
+
+#grandPrice{
+    width: 25%;
+    height: 3vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 38%;
 }
 
 @media screen and (max-width: 300px) {

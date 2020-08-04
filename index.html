@@ -86,7 +86,7 @@
 
     <div class="qual" style="float: left;margin-left: 40%;">
 
-        <p class="text-center">Quantity</p><input type="number" value="1" name="quant" placeholder="Quantity" id="quantity" min="1" required>
+        <p class="text-center">Quantity</p><input type="number" value="" name="quant" placeholder="Quantity" id="quantity" min="1" required>
 
     </div>
 
@@ -161,22 +161,7 @@
              </div>
               
               <br>
-
-              <div class="tomatpizaa">
-
-                <input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" id="tomato"> Tomatoes
-
-                <select class="values">
-                    <option value="" selected>Select Size</option>
-                    <option value="50" >small</option>
-                    <option value="100">medium</option>
-                    <option value="150">large</option>
-              </select>
-
-            </div>
-
-              <br>
-
+           
               <div class="chknpizza">
 
               <input class="meat" type="checkbox" name="Meat" value="Chicken" id="chicken"> Chicken
@@ -194,7 +179,7 @@
 
               <div class="beefpizza">
 
-              <input class="meat" type="checkbox" name="Meat" value="Beef" id="beef"> Beef
+              <input class="meat" type="checkbox" name="Meat" onclick="myFunction()" value="Beef" id="beef"> Beef
             
                 <select class="values">
                     <option value="" selected>Select Size</option>
@@ -211,10 +196,6 @@
 
     </form>
 
-    <br>
-
-    <br>
-
     <div class="controls text-center">
 
       
@@ -229,8 +210,6 @@
 
         <div class="text-center" id="yourOrder">
 
-            <h3>Proceed To Payment</h3>
-
         <div id="yourPrice">
 
             <h3>Price</h3>
@@ -243,9 +222,17 @@
 
         <div id="total3"></div>
 
+        <p style="display:none" id="total4">Pepperoni</p>
+
+        <p style="display:none" id="total5">Pineapple</p>
+
+        <p style="display:none" id="total6">Chicken</p>
+
+        <p style="display:none" id="total7">Beef</p>
+
         <h3 style="color: green;">grand total:</h3>
 
-    <div id="grandPrice"></div>
+        <div id="grandPrice"></div>
 
     <br>
     <br>

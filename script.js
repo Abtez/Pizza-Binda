@@ -59,6 +59,7 @@ const pizzaCrust=[crispy,stuffed,gluttenFree]
 //console.log(pizzaCrust);
 
 $(document).ready(function(){
+
     $('#form input').on('change', function() {
         //alert($('input[name=radioName]:checked', '#form').val()); 
      });
@@ -70,9 +71,6 @@ $(document).ready(function(){
          })
          $("#total1").text(total);
          
-
-     
-
      $('select').on("change", function(){
         var sum = 0;
         $('select.values').each(function() {
@@ -101,8 +99,17 @@ var orderBtn=document.getElementById("getorder");
 orderBtn.addEventListener("click", function(){
  alert("total")
 
-
 });
+
+function myFunction() {
+    var checkBox = document.getElementById("beef");
+    var text = document.getElementById("total7");
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+  }
 
 
 
