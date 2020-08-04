@@ -134,7 +134,7 @@
 
               <div class="prnpizza">
 
-              <input class="meat" type="checkbox" name="Meat" value="Pepperoni" id="pepperoni"> Pepperoni
+              <input class="topin" type="checkbox" name="Meat" onclick="myThreeFunction()" value="Pepperoni" id="pepperoni"> Pepperoni
               
               <select class="values">Pineapple
                 <option value="" selected>Select Size</option>
@@ -149,7 +149,7 @@
 
              <div class="pinepizza">
 
-                <input class="veggies" type="checkbox" name="Veggies" value="Pineapple" id="pineapple"> Pineapple
+                <input class="topin" type="checkbox" name="Veggies" onclick="myTwoFunction()" value="Pineapple" id="pineapple"> Pineapple
 
                 <select class="values">
                     <option value="" selected>Select Size</option>
@@ -164,7 +164,7 @@
            
               <div class="chknpizza">
 
-              <input class="meat" type="checkbox" name="Meat" value="Chicken" id="chicken"> Chicken
+              <input class="topin" type="checkbox" name="Meat" onclick="myOneFunction()" value="Chicken" id="chicken"> Chicken
             
               <select class="values">
                 <option value="" selected>Select Size</option>
@@ -179,7 +179,7 @@
 
               <div class="beefpizza">
 
-              <input class="meat" type="checkbox" name="Meat" onclick="myFunction()" value="Beef" id="beef"> Beef
+              <input class="topin" type="checkbox" name="Meat" onclick="myFunction()" value="Beef" id="beef"> Beef
             
                 <select class="values">
                     <option value="" selected>Select Size</option>
@@ -202,7 +202,7 @@
 
         <button type="submit" class="btn btn-success" onclick="" id="getorder">Place Order</button>
 
-        <button type="reset" class="btn btn-danger" onclick="clearAll()" id="cnclorder">Cancel Order</button>
+        <button type="button" class="btn btn-danger" value="click" onclick="refreshPage()" id="cnclorder">Cancel Order</button>
 
     </div>
 
@@ -212,7 +212,7 @@
 
         <div id="yourPrice">
 
-            <h3>Price</h3>
+            <h3 style="text-transform: none;">Your Item(s)</h3>
 
         </div>
 
@@ -236,6 +236,8 @@
 
     <br>
     <br>
+
+</div>
 
 </div>
 
@@ -404,7 +406,7 @@
           
         <br>
 
-        <footer class="text-center">copyright</footer>
+        <footer class="text-center">Copyright (c) 2020 Abzed Abdul Mohammed</footer>
 
         <br>
        

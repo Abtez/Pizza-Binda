@@ -111,5 +111,40 @@ function myFunction() {
     }
   }
 
+  function myOneFunction() {
+    var checkBoxOne = document.getElementById("chicken");
+    var textOne = document.getElementById("total6");
+    if (checkBoxOne.checked == true){
+      textOne.style.display = "block";
+    } else {
+       textOne.style.display = "none";
+    }
+  }
 
+  function myTwoFunction() {
+    var checkBoxTwo = document.getElementById("pineapple");
+    var textTwo = document.getElementById("total5");
+    if (checkBoxTwo.checked == true){
+      textTwo.style.display = "block";
+    } else {
+       textTwo.style.display = "none";
+    }
+  }
 
+  function myThreeFunction() {
+    var checkBoxThree = document.getElementById("pepperoni");
+    var textThree = document.getElementById("total4");
+    if (checkBoxThree.checked == true){
+      textThree.style.display = "block";
+    } else {
+       textThree.style.display = "none";
+    }
+  }
+
+  function myReset() {
+    document.getElementById("form").reset();
+  }
+
+  function refreshPage(){
+    window.location.reload();
+} 
