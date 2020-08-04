@@ -67,7 +67,7 @@
         
         <div class="inputIcon text-center">
 
-            <p placeholder="Address" id="address"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span></p>
+            <p placeholder="Address" id="address"></p>
       
         </div>
         
@@ -84,9 +84,11 @@
 
     <h2 id="startOrder" class="text-center">start your order</h2>
 
+    <p style="font-size: 16px;" class="text-center"><em><b>NB:</b>Fill the quantity field <u>FIRST</u></em></p>
+
     <div class="qual" style="float: left;margin-left: 40%;">
 
-        <p class="text-center">Quantity</p><input type="number" value="" name="quant" placeholder="Quantity" id="quantity" min="1" required>
+        <p class="text-center">Quantity</p><input type="number" value="1" name="quant" placeholder="Quantity" id="quantity" min="1" required>
 
     </div>
 
@@ -214,13 +216,17 @@
 
             <h3 style="text-transform: none;">Your Item(s)</h3>
 
-        </div>
+        
 
         <div id="total1"></div>
 
         <div id="total2"></div>
 
-        <div id="total3"></div>
+
+        </div>
+      
+
+        <h3 style="color: green;">grand total:</h3>
 
         <p style="display:none" id="total4">Pepperoni</p>
 
@@ -229,10 +235,11 @@
         <p style="display:none" id="total6">Chicken</p>
 
         <p style="display:none" id="total7">Beef</p>
+        <div class="text-center" id="grandPrice"></div>
+        <div style="display:none;" id="total3"> </div>
 
-        <h3 style="color: green;">grand total:</h3>
+        
 
-        <div id="grandPrice"></div>
 
     <br>
     <br>
@@ -343,9 +350,9 @@
           
                 <div class="clearfix">
         
-                  <button id="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn-danger">Cancel</button>
+                  <button id="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'" class="btn cancelbtn btn-danger">Cancel</button>
         
-                  <button id="signup" type="submit" class="signupbtn btn-success">Sign Up</button>
+                  <button id="signup" type="submit" class="btn signupbtn btn-success">Sign Up</button>
         
                 </div>
         

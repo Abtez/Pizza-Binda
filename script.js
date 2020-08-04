@@ -20,51 +20,26 @@ dropdown.onchange=function(event){
     if(dropdown.value==="Delivery"){
        var address= prompt("Enter Your Address");
         document.getElementById("address").innerHTML=address;
-    }
-}
 
 const delivery=document.querySelector(".dropdown-delivery");
-let address= document.getElementById("address").innerHTML;
+var address= document.getElementById("address").innerHTML;
+
 const submit=document.querySelector("#submit");
 
 submit.addEventListener("click", function(){
-    alert("Order received");
+    console.log(address);
+    alert("Your Order Will Be Delivered to Your Location & Your Delivery Charge is Ksh 250");
+    event.preventDefault();
 })
 
-/*grand pize of pizza=(topping+crust+size)*quantity
-if place order is cliked dispaly grand prize*/
+}
+}
 
-var small=document.getElementById("small").value;
-var medium=document.getElementById("medium").value;
-var large=document.getElementById("large").value;
-
-small=300;
-medium=550;
-large=800;
-
-const pizzaSize=[small,medium,large];
-
-//console.log(pizzaSize);
-
-var crispy=document.getElementById("crispy").value;
-var stuffed=document.getElementById("stuffed").value;
-var gluttenFree=document.getElementById("gluttenfree").value;
-
-crispy=140;
-stuffed=170;
-gluttenFree=150;
-
-const pizzaCrust=[crispy,stuffed,gluttenFree]
-
-//console.log(pizzaCrust);
 
 $(document).ready(function(){
 
-    $('#form input').on('change', function() {
-        //alert($('input[name=radioName]:checked', '#form').val()); 
-     });
-  
-     $(":radio").on("change", function(){
+   
+         $(":radio").on("change", function(){
          var total=0;
          $(":radio:checked").each(function(){
              total+=Number(this.value)
@@ -82,24 +57,26 @@ $(document).ready(function(){
 
          $('input[type=number][name=quant]').on
          
-         var grandTotal=[(sum+total) * quantity];
+         var delivery=250;
+         var grandTotal=[(sum+total) * quantity+(delivery)] ;
          document.getElementById("total3").innerHTML=grandTotal;
          console.log(sum);
          console.log(quantity);
          console.log(total);
          console.log(grandTotal)
       
-})
+         $("#getorder").click(function(){
+            $("#grandPrice").append(address);
+            $("#total3").show();  
+            $("#yourPrice").hide();
+
+         });
+
+      });
 
     });
     
 }); 
-
-var orderBtn=document.getElementById("getorder");
-orderBtn.addEventListener("click", function(){
- alert("total")
-
-});
 
 function myFunction() {
     var checkBox = document.getElementById("beef");
@@ -148,3 +125,8 @@ function myFunction() {
   function refreshPage(){
     window.location.reload();
 } 
+
+
+$(document).ready(function(){
+ 
+});
