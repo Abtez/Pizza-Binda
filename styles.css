@@ -225,6 +225,13 @@ select{
     text-transform: capitalize;
 }
 
+.qual p{
+    color: orange;
+    font-weight: bold;
+    text-shadow: black;
+    font-size: 1.8vw;
+}
+
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
        width: 100%;

@@ -62,14 +62,14 @@ $(document).ready(function(){
     $('#form input').on('change', function() {
         //alert($('input[name=radioName]:checked', '#form').val()); 
      });
-
+  
      $(":radio").on("change", function(){
          var total=0;
          $(":radio:checked").each(function(){
              total+=Number(this.value)
          })
          $("#total1").text(total);
-         console.log(total);
+         
 
      
 
@@ -80,13 +80,29 @@ $(document).ready(function(){
         });
          $("#total2").html(sum);
 
-         console.log(sum);
-         var grandTotal=sum+total;
+         var quantity = $('input[type=number][name=quant]').val();
+
+         $('input[type=number][name=quant]').on
+         
+         var grandTotal=[(sum+total) * quantity];
          document.getElementById("total3").innerHTML=grandTotal;
+         console.log(sum);
+         console.log(quantity);
+         console.log(total);
          console.log(grandTotal)
+      
+})
 
     });
+    
+}); 
 
-})
-   
+var orderBtn=document.getElementById("getorder");
+orderBtn.addEventListener("click", function(){
+ alert("total")
+
+
 });
+
+
+

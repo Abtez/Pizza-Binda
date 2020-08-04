@@ -84,6 +84,12 @@
 
     <h2 id="startOrder" class="text-center">start your order</h2>
 
+    <div class="qual" style="float: left;margin-left: 40%;">
+
+        <p class="text-center">Quantity</p><input type="number" value="1" name="quant" placeholder="Quantity" id="quantity" min="1" required>
+
+    </div>
+
     <form action="" id="form" class="text-center">
       
         <div class="menu-items" style="line-height: 230%;">
@@ -211,11 +217,11 @@
 
     <div class="controls text-center">
 
-        <input type="number" class="" value="" placeholder="Quantity" id="quantity">
+      
 
         <button type="submit" class="btn btn-success" onclick="" id="getorder">Place Order</button>
 
-        <button type="reset" class="btn btn-danger" onclick="CancelOrder()" id="cnclorder">Cancel Order</button>
+        <button type="reset" class="btn btn-danger" onclick="clearAll()" id="cnclorder">Cancel Order</button>
 
     </div>
 
