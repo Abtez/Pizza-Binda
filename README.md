@@ -18,7 +18,7 @@ This web application is a pizza app where a user can order pizza online; select 
 
 ### How To Run
 
-* Click on this (link)[] to access my git hub Delani studio repositpory.
+* Click on this [link](https://github.com/Abzed/Pizza-Binda) to access my git hub Delani studio repositpory.
 
 * On the top panel you will see a green button with a download icon and the word "CODE" written next to it. Click it to download the project zip file.
 
@@ -26,7 +26,7 @@ This web application is a pizza app where a user can order pizza online; select 
 
 * Right click on folder and navigate to "open with another application" and select your code editor and run the codes on your machine.
 
-* Or you can access the web application directly using this live (link)[].
+* Or you can access the web application directly using this live [link](https://abzed.github.io/Pizza-Binda/).
 
 *****
 
